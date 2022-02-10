@@ -2,6 +2,7 @@ package br.com.dio.todolist
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import br.com.dio.todolist.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -17,6 +18,8 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun intentListener(){
-
+        binding.fabAddTarefa.setOnClickListener {
+            Log.e("TAG", "Teste")
+        }
     }
 }
